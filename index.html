@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glad MOUKOUIRI | Spécialiste Système Biologie Médicale & Ingénieur Biomédical</title>
+    <meta name="description"
+        content="Portfolio de Glad Jhinaldi Dellys MOUKOUIRI - Spécialiste Système Biologie Médicale & Ingénieur Biomédical. Expert en maintenance, déploiement d'équipements hospitaliers, Leica Microsystems, GMAO et projets de santé publique.">
+    <meta name="author" content="Glad Jhinaldi Dellys MOUKOUIRI">
+    <meta property="og:title" content="Glad MOUKOUIRI | Ingénieur Biomédical & Spécialiste Système">
+    <meta property="og:description"
+        content="Expertise biomédicale, maintenance hospitalière de haute technologie, gestion de projets internationaux (Banque Mondiale ISMEA, GIZ, Leica, GMAO).">
+    <meta property="og:image" content="assets/hero_portrait.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Ambient Elements -->
+    <div class="bg-pattern" aria-hidden="true"></div>
+
+    <!-- Quick Floating Action Bar / Controls -->
+    <div class="top-controls" id="topControls">
+        <button id="themeToggleBtn" class="control-btn" title="Changer de thème (Clair / Sombre)"
+            aria-label="Basculer le thème">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="soundToggleBtn" class="control-btn" title="Effets sonores (On / Off)" aria-label="Basculer le son">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <button id="mobileMenuToggle" class="control-btn mobile-only" title="Menu" aria-label="Ouvrir le menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Main App Container -->
+    <div class="portfolio-wrapper">
+        <div class="portfolio-card" id="portfolioCard">
+
+            <!-- SIDEBAR (Visible for interior pages) -->
+            <aside class="card-sidebar" id="cardSidebar" aria-label="Navigation principale">
+                <div class="sidebar-avatar-box">
+                    <img src="assets/hero_portrait.jpg" alt="Portrait de Glad MOUKOUIRI" class="sidebar-avatar-img"
+                        id="sidebarAvatar">
+                    <div class="avatar-badge" title="Disponible pour missions & projets biomédicaux">
+                        <span class="pulse-dot"></span>
+                    </div>
+                </div>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li>
+                            <button class="nav-item active" data-target="home" id="nav-home">
+                                <span class="nav-text">ACCUEIL</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav-item" data-target="about" id="nav-about">
+                                <span class="nav-text">À PROPOS</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav-item" data-target="resume" id="nav-resume">
+                                <span class="nav-text">PARCOURS</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav-item" data-target="portfolio" id="nav-portfolio">
+                                <span class="nav-text">PROJETS</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav-item" data-target="testimonials" id="nav-testimonials">
+                                <span class="nav-text">RÉFÉRENCES</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav-item" data-target="contact" id="nav-contact">
+                                <span class="nav-text">CONTACT</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <div class="social-links-mini">
+                        <a href="mailto:gladmoukouiri@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+221772853820" title="Téléphone"><i class="fa-solid fa-phone"></i></a>
+                        <a href="https://wa.me/221772853820" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span class="copyright-text">© 2026 Glad MOUKOUIRI</span>
+                </div>
+            </aside>
+
+            <!-- MAIN CONTENT SECTIONS -->
+            <main class="card-main-content" id="mainContent">
+
+                <!-- 1. SECTION: HOME / HERO -->
+                <section class="page-section active" id="section-home" data-page="home">
+                    <div class="hero-split-layout">
+                        <div class="hero-text-side">
+                            <div class="hero-content-inner">
+                                <div class="greeting-tag">BIENVENUE !</div>
+                                <h1 class="hero-title">
+                                    JE SUIS <span class="highlight-name">GLAD</span>
+                                </h1>
+                                <div class="hero-role-badge">
+                                    SPÉCIALISTE SYSTÈME BIOLOGIE MÉDICALE & INGÉNIEUR BIOMÉDICAL
+                                </div>
+                                <p class="hero-description">
+                                    Ingénieur biomédical et spécialiste système en biologie médicale, expert en maintenance, déploiement d'équipements hospitaliers de haute technologie, gestion d'atelier et pilotage de projets de santé publique d'envergure (Banque Mondiale ISMEA, GIZ ENDEV Santé, Leica Microsystems, GMAO).
+                                </p>
+                                <div class="hero-actions">
+                                    <button class="btn btn-primary" id="heroMoreBtn" data-target="about">
+                                        <span>DÉCOUVRIR MON PARCOURS</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                    <button class="btn btn-outline" id="heroContactBtn" data-target="contact">
+                                        <span>ME CONTACTER</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-image-side">
+                            <div class="hero-image-container">
+                                <img src="assets/hero_portrait.jpg"
+                                    alt="Glad Jhinaldi Dellys MOUKOUIRI - Ingénieur Biomédical" class="hero-portrait-img"
+                                    fetchpriority="high">
+                                <div class="hero-image-overlay"></div>
+                                <div class="floating-stat-badge">
+                                    <i class="fa-solid fa-certificate"></i>
+                                    <div>
+                                        <strong>6+ Ans</strong>
+                                        <small>d'Excellence Biomédicale</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. SECTION: ABOUT ME -->
+                <section class="page-section" id="section-about" data-page="about">
+                    <div class="section-inner-wrapper">
+                        <!-- Dashed Section Banner -->
+                        <div class="section-banner">
+                            <h2 class="banner-title">À PROPOS DE MOI</h2>
+                        </div>
+
+                        <!-- Bio Header -->
+                        <div class="about-header">
+                            <h3 class="about-lead">
+                                Je suis <span class="text-bold">Glad Jhinaldi Dellys MOUKOUIRI</span>, <span class="text-accent">Spécialiste Système Biologie Médicale & Ingénieur Biomédical</span>
+                            </h3>
+                            <p class="about-text">
+                                Diplômé d'un Master en Ingénierie Biomédicale et fort de plus de 6 années d'expérience sur le terrain au Sénégal et en Afrique centrale, j'interviens sur l'ensemble du cycle de vie des dispositifs médicaux : installation, maintenance préventive et curative, gestion d'atelier, traçabilité GMAO, et pilotage de projets d'envergure nationale et internationale (Banque Mondiale, GIZ, Direction des Laboratoires). Habilité Niveau 1 sur les microscopes ophtalmiques LEICA et certifié en Audit Qualité ISO 9001 et HSST (ISO 45001 / ISO 31000).
+                            </p>
+                        </div>
+
+                        <!-- 4 Dark Stat Boxes Grid -->
+                        <div class="stats-dark-box">
+                            <div class="stat-card">
+                                <div class="stat-number"><span class="counter" data-target="6">6</span>+</div>
+                                <div class="stat-label">ANNÉES D'EXPÉRIENCE</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number"><span class="counter" data-target="15">15</span>+</div>
+                                <div class="stat-label">PROJETS DÉPLOYÉS</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number"><span class="counter" data-target="600">600</span>+</div>
+                                <div class="stat-label">ÉQUIPEMENTS & SITES</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number"><span class="counter" data-target="100">100</span>%</div>
+                                <div class="stat-label">QUALITÉ & CONFORMITÉ HSE</div>
+                            </div>
+                        </div>
+
+                        <!-- What I Do Section -->
+                        <div class="services-block">
+                            <h3 class="subsection-title">Mes Domaines d'Expertise</h3>
+                            <div class="services-grid">
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fa-solid fa-microscope"></i>
+                                    </div>
+                                    <div class="service-details">
+                                        <h4>BIOLOGIE MÉDICALE & SYSTÈMES</h4>
+                                        <p>Maintenance préventive et curative, diagnostic avancé, calibrage des analyseurs et automates de laboratoire, gestion de l'atelier de dépannage et approvisionnement en pièces détachées.</p>
+                                    </div>
+                                </div>
+
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fa-solid fa-hospital-user"></i>
+                                    </div>
+                                    <div class="service-details">
+                                        <h4>PILOTAGE DE PROJETS HOSPITALIERS</h4>
+                                        <p>Direction d'opérations d'équipement complexes (Projet ISMEA Banque Mondiale : 242 équipements / 30 sites, ENDEV Santé : 120 frigos solaires, REDISSE : 98 sites, Hôpital ASFADAR).</p>
+                                    </div>
+                                </div>
+
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="service-details">
+                                        <h4>MICROSCOPIE LEICA & BLOCS OPÉRATOIRES</h4>
+                                        <p>Habilitation Niveau 1 Leica Microsystems (M220, M620, M822/M844, Proveo 8, BIOM, Slitlamp, RUV800), mise en service de tables de radiologie et équipement de blocs opératoires.</p>
+                                    </div>
+                                </div>
+
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </div>
+                                    <div class="service-details">
+                                        <h4>QUALITÉ ISO, HSST & GMAO</h4>
+                                        <p>Auditeur interne certifié ISO 9001:2015, membre certifié CHSST (ISO 45001 & ISO 31000), déploiement et administration d'outils GMAO pour la traçabilité hospitalière et l'inventaire dynamique.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fun Fact / Quote Banner -->
+                        <div class="designer-quote-banner">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <blockquote>« Garantir la fiabilité des équipements médicaux et la sécurité des soins, c'est contribuer directement à sauver des vies. »</blockquote>
+                            <cite>— Glad Jhinaldi Dellys MOUKOUIRI</cite>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. SECTION: RESUME -->
+                <section class="page-section" id="section-resume" data-page="resume">
+                    <div class="section-inner-wrapper">
+                        <!-- Dashed Section Banner -->
+                        <div class="section-banner">
+                            <h2 class="banner-title">PARCOURS & EXPÉRIENCE</h2>
+                        </div>
+
+                        <div class="resume-grid">
+                            <!-- Education Column -->
+                            <div class="resume-column">
+                                <div class="column-header">
+                                    <i class="fa-solid fa-graduation-cap header-icon"></i>
+                                    <h3>FORMATIONS & CERTIFICATIONS</h3>
+                                </div>
+
+                                <div class="timeline-group">
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">Janvier 2026</span>
+                                        <h4 class="timeline-title">Habilitation Microscopes LEICA – Niveau 1</h4>
+                                        <span class="timeline-place">Leica Microsystems — Field Service Engineer</span>
+                                        <p class="timeline-desc">Installation, maintenance préventive, dépannage et réparation des microscopes ophtalmiques et accessoires (M220 F12, M620 F20, M822/M844 F20/F40, Proveo 8, DIC800, BIOM, Slitlamp, RUV800).</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">Avril 2025</span>
+                                        <h4 class="timeline-title">Certification HSST (Santé & Sécurité au Travail)</h4>
+                                        <span class="timeline-place">Comité d'Hygiène, de Sécurité et des Conditions de Travail</span>
+                                        <p class="timeline-desc">Réglementation SST, normes ISO 45001 et ISO 31000, évaluation des risques professionnels, 9 principes généraux de prévention et gestion des risques HSE en milieu hospitalier.</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">Avril 2023</span>
+                                        <h4 class="timeline-title">Certification Auditeur Interne Qualité</h4>
+                                        <span class="timeline-place">Système de Management de la Qualité — ISO 9001:2015</span>
+                                        <p class="timeline-desc">Principes de l'audit qualité, préparation et conduite d'audits complets de bout en bout, libellé et classification des écarts, actions correctives et amélioration continue.</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">2016 - 2020</span>
+                                        <h4 class="timeline-title">Master en Ingénierie Biomédicale</h4>
+                                        <span class="timeline-place">Université Polytechnique de l'Ouest Africain (UPOA, Dakar)</span>
+                                        <p class="timeline-desc">Mémoire : <em>« Conception et réalisation d'un stéthoscope connecté Yoka »</em>. Maintenance hospitalière, électronique médicale, réglementation, conception de dispositifs médicaux et gestion de parc.</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">2013 - 2016</span>
+                                        <h4 class="timeline-title">Licence Informatique & Électronique Industrielle</h4>
+                                        <span class="timeline-place">Institut Supérieur de Technologies Industrielles (IPG-ISTI, Dakar)</span>
+                                        <p class="timeline-desc">Mémoire : <em>« Étude et réalisation d'un oxymètre connecté à Android »</em>. Systèmes automatisés, automates programmables industriels (API), instrumentation et interfaces hardware/logiciel.</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">2013</span>
+                                        <h4 class="timeline-title">Baccalauréat Technique Série E</h4>
+                                        <span class="timeline-place">Lycée Technique 5 Février 1979 (Congo)</span>
+                                        <p class="timeline-desc">Filière d'excellence technologique : Mathématiques avancées, Physique appliquée et Technologie industrielle.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experience Column -->
+                            <div class="resume-column">
+                                <div class="column-header">
+                                    <i class="fa-solid fa-briefcase header-icon"></i>
+                                    <h3>EXPÉRIENCE PROFESSIONNELLE</h3>
+                                </div>
+
+                                <div class="timeline-group">
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">Nov. 2023 - Présent</span>
+                                        <h4 class="timeline-title">Spécialiste Système Biologie Médicale</h4>
+                                        <span class="timeline-place">Technologies Services — Dakar, Sénégal</span>
+                                        <p class="timeline-desc">Maintenance préventive & curative des équipements de biologie, gestion de l'atelier de dépannage, traçabilité GMAO, gestion des pièces détachées, formation des utilisateurs et contribution au SMQ ISO 9001.</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">Mai 2023 - Oct. 2023</span>
+                                        <h4 class="timeline-title">Responsable Projet Biomédical</h4>
+                                        <span class="timeline-place">Technologies Services</span>
+                                        <p class="timeline-desc">Pilotage du <strong>Projet ISMEA (Banque Mondiale)</strong> : 242 équipements médicaux techniques installés dans 30 structures sanitaires (3 équipes terrain). Marché ENABEL (Labo national ARP) et intégration GMAO.</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">Déc. 2022 - Déc. 2024</span>
+                                        <h4 class="timeline-title">Technicien Biomédical Projet</h4>
+                                        <span class="timeline-place">Technologies Services</span>
+                                        <p class="timeline-desc">Équipement complet et mise en service de l'Hôpital International de Dakar (ASFADAR). Dispatching par service/étage, plannings d'installation et élaboration des protocoles de maintenance préventive.</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">Fév. 2021 - Fév. 2022</span>
+                                        <h4 class="timeline-title">Ingénieur Biomédical</h4>
+                                        <span class="timeline-place">ONG PATH & Direction des Infrastructures, Équipements et Maintenance (DIEM / Ministère de la Santé)</span>
+                                        <p class="timeline-desc">Suivi de la stratégie nationale de maintenance et GMAO. Missions d'inauguration des hôpitaux de Kaffrine et Kédougou. Suivi national des installations d'équipements Covid-19.</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">Août 2022 - Oct. 2022</span>
+                                        <h4 class="timeline-title">Ingénieur Biomédical</h4>
+                                        <span class="timeline-place">Paramed Service Limited</span>
+                                        <p class="timeline-desc">Études des besoins techniques, suivi du cycle de vie complet des dispositifs médicaux (installation sécurisée, maintenance, réforme).</p>
+                                    </div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-badge">2017 - 2020</span>
+                                        <h4 class="timeline-title">Stages Hospitaliers & Immersion</h4>
+                                        <span class="timeline-place">Hôpital Principal de Dakar | Hôpital Albert Royer | DIEM Congo</span>
+                                        <p class="timeline-desc">Installation de tables de radiologie (MRS SARL), préparation du bloc opératoire pour la chirurgie de séparation de bébés siamois (Pr Gabriel NGOM), gestion de parc et documentation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skills & Expertise Bar Grid -->
+                        <div class="skills-block">
+                            <h3 class="subsection-title">Compétences & Savoir-Faire Spécifiques</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Maintenance & Diagnostic Biomédical (Biologie, Imagerie)</span>
+                                        <span>96%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="--percent: 96%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Pilotage de Projets de Santé (Banque Mondiale, GIZ, REDISSE)</span>
+                                        <span>94%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="--percent: 94%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>GMAO & Traçabilité Hospitalière (Web & Mobile)</span>
+                                        <span>92%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="--percent: 92%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Microscopie Ophtalmique Leica (Habilitation Niveau 1)</span>
+                                        <span>92%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="--percent: 92%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Normes Qualité & Sécurité (ISO 9001, ISO 45001, CHSST)</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="--percent: 90%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Électronique Médicale, IoT & Systèmes Embarqués</span>
+                                        <span>88%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="--percent: 88%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Download Resume Action -->
+                        <div class="resume-download-bar">
+                            <div class="download-info">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                <span>Curriculum Vitae complet de Glad Jhinaldi Dellys MOUKOUIRI au format PDF</span>
+                            </div>
+                            <button class="btn btn-primary" id="downloadCvBtn">
+                                <i class="fa-solid fa-download"></i>
+                                <span>TÉLÉCHARGER CV</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. SECTION: PORTFOLIO -->
+                <section class="page-section" id="section-portfolio" data-page="portfolio">
+                    <div class="section-inner-wrapper">
+                        <!-- Dashed Section Banner -->
+                        <div class="section-banner">
+                            <h2 class="banner-title">PROJETS & RÉALISATIONS</h2>
+                        </div>
+
+                        <!-- Filter Tabs -->
+                        <div class="portfolio-filter-tabs" role="tablist">
+                            <button class="filter-btn active" data-filter="all" role="tab"
+                                aria-selected="true">TOUS LES PROJETS</button>
+                            <button class="filter-btn" data-filter="projects" role="tab" aria-selected="false">PROJETS NATIONAUX & SANTÉ</button>
+                            <button class="filter-btn" data-filter="biomedical" role="tab" aria-selected="false">SYSTÈMES BIOMÉDICAUX</button>
+                            <button class="filter-btn" data-filter="innovation" role="tab"
+                                aria-selected="false">INNOVATION & IOT</button>
+                        </div>
+
+                        <!-- Projects Gallery Grid -->
+                        <div class="portfolio-grid" id="portfolioGrid">
+
+                            <!-- Project 1: ISMEA (Banque Mondiale) -->
+                            <div class="portfolio-card-item" data-category="projects" data-id="1">
+                                <div class="card-media">
+                                    <img src="assets/project_ismea.jpg" alt="Projet ISMEA Banque Mondiale"
+                                        loading="lazy">
+                                    <div class="media-overlay">
+                                        <div class="overlay-content">
+                                            <span class="project-tag">BANQUE MONDIALE</span>
+                                            <h4 class="project-title">Projet ISMEA – Santé Mère & Enfant</h4>
+                                            <p class="project-subtitle">242 équipements médicaux installés dans 30 structures sanitaires
+                                            </p>
+                                            <button class="view-project-btn" aria-label="Voir le projet ISMEA">
+                                                <i class="fa-solid fa-expand"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 2: ENDEV SANTE (GIZ & Haier) -->
+                            <div class="portfolio-card-item" data-category="projects" data-id="2">
+                                <div class="card-media">
+                                    <img src="assets/project_solarcold.jpg" alt="Projet ENDEV SANTE GIZ Haier"
+                                        loading="lazy">
+                                    <div class="media-overlay">
+                                        <div class="overlay-content">
+                                            <span class="project-tag">GIZ & HAIER MEDICAL</span>
+                                            <h4 class="project-title">ENDEV Santé – 120 Frigos Solaires</h4>
+                                            <p class="project-subtitle">Déploiement de chaîne du froid solaire dans 120 localités hospitalières
+                                            </p>
+                                            <button class="view-project-btn" aria-label="Voir le projet ENDEV SANTE">
+                                                <i class="fa-solid fa-expand"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3: Leica Microsystems -->
+                            <div class="portfolio-card-item" data-category="biomedical" data-id="3">
+                                <div class="card-media">
+                                    <img src="assets/project_leica_mic.jpg" alt="Microscopes Ophtalmiques Leica"
+                                        loading="lazy">
+                                    <div class="media-overlay">
+                                        <div class="overlay-content">
+                                            <span class="project-tag">LEICA MICROSYSTEMS</span>
+                                            <h4 class="project-title">Microscopes Ophtalmiques & Blocs</h4>
+                                            <p class="project-subtitle">Habilitation Niv. 1 : Proveo 8, M822/M844, M620, BIOM & Slitlamp</p>
+                                            <button class="view-project-btn" aria-label="Voir le projet Leica Microsystems">
+                                                <i class="fa-solid fa-expand"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 4: REDISSE Laboratory -->
+                            <div class="portfolio-card-item" data-category="projects" data-id="4">
+                                <div class="card-media">
+                                    <img src="assets/project_lab_redisse.jpg" alt="Projet REDISSE Laboratoires"
+                                        loading="lazy">
+                                    <div class="media-overlay">
+                                        <div class="overlay-content">
+                                            <span class="project-tag">LABORATOIRES DE SANTÉ</span>
+                                            <h4 class="project-title">Projet REDISSE – 98 Sites</h4>
+                                            <p class="project-subtitle">Fourniture et mise en service de 358 articles biomédicaux (33 items)</p>
+                                            <button class="view-project-btn"
+                                                aria-label="Voir le projet REDISSE">
+                                                <i class="fa-solid fa-expand"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 5: Smart Stethoscope Yoka & IoT -->
+                            <div class="portfolio-card-item" data-category="innovation" data-id="5">
+                                <div class="card-media">
+                                    <img src="assets/project_smart_steth.jpg" alt="Stéthoscope Connecté Yoka et Oxymètre Android"
+                                        loading="lazy">
+                                    <div class="media-overlay">
+                                        <div class="overlay-content">
+                                            <span class="project-tag">IOT & SANTÉ CONNECTÉE</span>
+                                            <h4 class="project-title">Stéthoscope Yoka & Oxymètre IoT</h4>
+                                            <p class="project-subtitle">Dispositifs médicaux connectés avec monitoring en temps réel sur Android</p>
+                                            <button class="view-project-btn"
+                                                aria-label="Voir le projet Yoka">
+                                                <i class="fa-solid fa-expand"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 6: GMAO & ASFADAR Hospital -->
+                            <div class="portfolio-card-item" data-category="biomedical" data-id="6">
+                                <div class="card-media">
+                                    <img src="assets/project_ismea.jpg" alt="Projet GMAO et Hôpital ASFADAR"
+                                        loading="lazy">
+                                    <div class="media-overlay">
+                                        <div class="overlay-content">
+                                            <span class="project-tag">GMAO & INGÉNIERIE HOSPITALIÈRE</span>
+                                            <h4 class="project-title">Hôpital ASFADAR & Déploiement GMAO</h4>
+                                            <p class="project-subtitle">Équipement global clé en main et système GMAO d'intervention mobile</p>
+                                            <button class="view-project-btn"
+                                                aria-label="Voir le projet GMAO et ASFADAR">
+                                                <i class="fa-solid fa-expand"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. SECTION: TESTIMONIALS -->
+                <section class="page-section" id="section-testimonials" data-page="testimonials">
+                    <div class="section-inner-wrapper">
+                        <!-- Dashed Section Banner -->
+                        <div class="section-banner">
+                            <h2 class="banner-title">RÉFÉRENCES & AVIS</h2>
+                        </div>
+
+                        <div class="testimonials-lead-text">
+                            <p>Témoignages et retours d'expérience de directeurs de projets de santé publique, responsables techniques, chirurgiens et partenaires institutionnels.</p>
+                        </div>
+
+                        <!-- 4 Dark Cards matching design -->
+                        <div class="testimonials-grid">
+                            <!-- Card 1: Dr. Diallo -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="client-avatar">
+                                        <span class="avatar-initials">AD</span>
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="client-name">Dr. A. Diallo</h4>
+                                        <span class="client-role">Coordonnateur Projet Santé Publique, ISMEA / Banque Mondiale</span>
+                                    </div>
+                                </div>
+                                <p class="testimonial-quote">
+                                    « La rigueur logistique et l'expertise technique de Glad ont été déterminantes pour déployer plus de 240 équipements dans 30 structures sanitaires à travers tout le Sénégal dans le respect strict des délais et standards internationaux. »
+                                </p>
+                                <div class="testimonial-rating" aria-label="Note: 5 étoiles sur 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: M. Fall -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="client-avatar">
+                                        <span class="avatar-initials">MF</span>
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="client-name">M. Fall</h4>
+                                        <span class="client-role">Responsable Technique & Maintenance, Technologies Services</span>
+                                    </div>
+                                </div>
+                                <p class="testimonial-quote">
+                                    « Un spécialiste système autonome, méthodique et doté d'une excellente maîtrise des automates de biologie et des normes HSE. Sa gestion de l'atelier, la traçabilité GMAO et son encadrement des juniors sont exemplaires. »
+                                </p>
+                                <div class="testimonial-rating" aria-label="Note: 5 étoiles sur 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Dr. Ndiaye -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="client-avatar">
+                                        <span class="avatar-initials">KN</span>
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="client-name">Dr. K. Ndiaye</h4>
+                                        <span class="client-role">Chirurgien Ophtalmologiste, Centre Hospitalier Régional</span>
+                                    </div>
+                                </div>
+                                <p class="testimonial-quote">
+                                    « L'intervention et les calibrations de Glad sur nos microscopes opératoires Leica ont été d'une précision irréprochable. Sa réactivité et sa pédagogie lors des formations d'utilisateurs en bloc opératoire font toute la différence. »
+                                </p>
+                                <div class="testimonial-rating" aria-label="Note: 5 étoiles sur 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <!-- Card 4: Ing. Traoré -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="client-avatar">
+                                        <span class="avatar-initials">ST</span>
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="client-name">Ing. S. Traoré</h4>
+                                        <span class="client-role">Consultant Énergie & Santé, Projet ENDEV GIZ</span>
+                                    </div>
+                                </div>
+                                <p class="testimonial-quote">
+                                    « Une coordination sans faille lors de l'installation des 120 réfrigérateurs solaires sur les 3 régions du nord (Saint-Louis, Matam, Louga). Glad allie sens aigu du terrain, respect des normes OMS et exigence qualité. »
+                                </p>
+                                <div class="testimonial-rating" aria-label="Note: 5 étoiles sur 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Brand Logos Trust Bar -->
+                        <div class="clients-trust-bar">
+                            <span class="trust-label">ORGANISATIONS & PARTENAIRES DE RÉFÉRENCE :</span>
+                            <div class="brand-names">
+                                <span>BANQUE MONDIALE</span>
+                                <span>✦</span>
+                                <span>GIZ SANTÉ</span>
+                                <span>✦</span>
+                                <span>MINISTÈRE DE LA SANTÉ (DIEM)</span>
+                                <span>✦</span>
+                                <span>LEICA MICROSYSTEMS</span>
+                                <span>✦</span>
+                                <span>HAIER MEDICAL</span>
+                                <span>✦</span>
+                                <span>ENABEL</span>
+                                <span>✦</span>
+                                <span>ONG PATH</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. SECTION: CONTACT -->
+                <section class="page-section" id="section-contact" data-page="contact">
+                    <div class="section-inner-wrapper">
+                        <!-- Dashed Section Banner -->
+                        <div class="section-banner">
+                            <h2 class="banner-title">ME CONTACTER</h2>
+                        </div>
+
+                        <div class="contact-intro">
+                            <h3>Contactez <span class="text-accent">Glad MOUKOUIRI</span> !</h3>
+                            <p>Vous avez un projet d'équipement biomédical, un besoin de maintenance spécialisée, une mission d'audit qualité/HSST ou vous souhaitez collaborer ? Écrivez-moi !</p>
+                        </div>
+
+                        <div class="contact-grid">
+                            <!-- Contact Information Details -->
+                            <div class="contact-info-col">
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-envelope-open-text"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h5>EMAIL DIRECT</h5>
+                                        <a href="mailto:gladmoukouiri@gmail.com"
+                                            class="info-link">gladmoukouiri@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h5>TÉLÉPHONE & WHATSAPP</h5>
+                                        <a href="tel:+221772853820" class="info-link">+221 77 285 38 20</a>
+                                        <a href="https://wa.me/221772853820" target="_blank" rel="noopener" class="info-link">WhatsApp Direct</a>
+                                    </div>
+                                </div>
+
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h5>LOCALISATION & DISPONIBILITÉ</h5>
+                                        <p>Dakar, Sénégal</p>
+                                        <small class="availability-tag">Disponible pour missions sous-régionales & internationales</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contact Interactive Form -->
+                            <div class="contact-form-col">
+                                <form class="contact-form" id="contactForm" novalidate>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="formName">Nom complet *</label>
+                                            <input type="text" id="formName" name="name" placeholder="Ex: Dr. Mamadou Ba"
+                                                required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formEmail">Email professionnel *</label>
+                                            <input type="email" id="formEmail" name="email"
+                                                placeholder="Ex: m.ba@hopital-dakar.sn" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="formSubject">Type de demande *</label>
+                                        <select id="formSubject" name="subject" required>
+                                            <option value="" disabled selected>Sélectionnez l'objet de votre message...</option>
+                                            <option value="Maintenance & Dépannage Biomédical">Maintenance & Dépannage Équipements Biomédicaux</option>
+                                            <option value="Déploiement de Projet Hospitalier">Déploiement de Projet d'Équipement Hospitalier</option>
+                                            <option value="Microscopes Ophtalmiques Leica">Intervention Microscopes Ophtalmiques Leica</option>
+                                            <option value="Audit Qualité ISO 9001 & HSST">Audit Qualité SMQ ISO 9001 & Sécurité HSST</option>
+                                            <option value="GMAO & Gestion de Parc">Intégration GMAO & Traçabilité de Parc Médical</option>
+                                            <option value="Autre opportunité">Autre collaboration / Opportunité</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="formMessage">Votre Message *</label>
+                                        <textarea id="formMessage" name="message" rows="4"
+                                            placeholder="Décrivez votre besoin, les types d'équipements concernés ou le périmètre de votre projet..."
+                                            required></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                                        <span>ENVOYER LE MESSAGE</span>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Yellow Footer Sign-off Banner -->
+                        <div class="contact-thanks-banner">
+                            <span>EXCELLENCE BIOMÉDICALE & SÉCURITÉ DES SOINS</span>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- FLOATING VERTICAL ICON DOCK (Right side) -->
+            <aside class="right-icon-dock" aria-label="Navigation rapide">
+                <div class="dock-container">
+                    <button class="dock-btn active" data-target="home" title="Accueil" aria-label="Section Accueil">
+                        <i class="fa-solid fa-house"></i>
+                    </button>
+                    <button class="dock-btn" data-target="about" title="À Propos" aria-label="Section À Propos">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <button class="dock-btn" data-target="resume" title="Parcours" aria-label="Section Parcours">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </button>
+                    <button class="dock-btn" data-target="portfolio" title="Projets" aria-label="Section Projets">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </button>
+                    <button class="dock-btn" data-target="testimonials" title="Références"
+                        aria-label="Section Références">
+                        <i class="fa-solid fa-comment-dots"></i>
+                    </button>
+                    <button class="dock-btn" data-target="contact" title="Contact" aria-label="Section Contact">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- PROJECT DETAILS MODAL / LIGHTBOX -->
+    <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
+        <div class="modal-backdrop-close" id="modalBackdrop"></div>
+        <div class="modal-dialog-card">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Fermer la boîte de dialogue">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-image-col">
+                    <img id="modalImg" src="" alt="Aperçu du projet">
+                </div>
+                <div class="modal-info-col">
+                    <span class="modal-tag" id="modalTag">PROJET NATIONAL</span>
+                    <h3 class="modal-title" id="modalTitle">Nom du Projet</h3>
+                    <p class="modal-desc" id="modalDesc">Description complète du projet...</p>
+
+                    <div class="modal-specs">
+                        <div class="spec-row">
+                            <strong>Partenaire / Client :</strong> <span id="modalClient">Banque Mondiale</span>
+                        </div>
+                        <div class="spec-row">
+                            <strong>Période :</strong> <span id="modalYear">2023 - 2024</span>
+                        </div>
+                        <div class="spec-row">
+                            <strong>Rôle :</strong> <span id="modalRole">Responsable de Projet Biomédical</span>
+                        </div>
+                        <div class="spec-row">
+                            <strong>Équipements & Outils :</strong> <span id="modalTools">GMAO, Dispositifs de soins, Procédures ISO</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <a href="mailto:gladmoukouiri@gmail.com?subject=Contact%20au%20sujet%20d'un%20projet%20biomédical" class="btn btn-primary" id="modalLiveDemo">
+                            <span>ÉCHANGER SUR CE PROJET</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
